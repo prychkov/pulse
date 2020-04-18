@@ -5,4 +5,11 @@
     text-align: center;
     line-height: 30px;
     margin: 0;
+    text-transform: uppercase;
+    &_left {
+        font-size: 36px;
+        line-height: normal;
+        text-align: left;
+        color: #ffffff;
+    }    
 }
