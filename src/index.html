@@ -8,12 +8,12 @@
     <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/font_icon.css">
+    <link rel="stylesheet" href="css/slick.css">
     
-    <!-- Слик <link rel="stylesheet" href="css/slick.css"> -->
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/tiny-slider.css">
+    <!-- Tiny <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/tiny-slider.css"> -->
 
     <!-- Bootstrap <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+    
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
@@ -138,8 +138,21 @@
                     <img src="img/production/carousel/carousel_3.jpg" alt="slide">
                 </div>
             </div>
+
+            <!-- ниже код для tiny слайдера
+            <div class="carousel__inner">
+                <div>
+                    <img src="img/production/carousel/carousel_1.jpg" alt="slide">
+                </div>
+                <div>
+                    <img src="img/production/carousel/carousel_2.jpg" alt="slide">
+                </div>
+                <div>
+                    <img src="img/production/carousel/carousel_3.jpg" alt="slide">
+                </div>
+            </div>
             <button type="button" class="prev"><img src="icons/arrow_left.svg"></button>
-            <button type="button" class="next"><img src="icons/arrow_right.svg"></button>
+            <button type="button" class="next"><img src="icons/arrow_right.svg"></button> -->
 
             <!-- Bootstrap карусель
                 <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
@@ -163,15 +176,47 @@
                     <span class="sr-only">Next</span>
                 </a>
             </div> -->
+
         </div>
     </section>
 
-    <!-- ссылки JS со слика 
-        <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script src="js/slick.min.js"></script> -->
+    <section class="catalog">
+        <div class="container">
+            <h2 class="title">Каталог пульсометров</h2>
+            <ul class="catalog__tabs">
+                <li class="catalog__tab catalog__tab_active"><div>Для фитнеса</div></li>
+                <li class="catalog__tab"><div>для бега</div></li>
+                <li class="catalog__tab"><div>для триатлона</div></li>
+            </ul>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+            <div class="catalog__content">
+                <div class="catalog-item">
+                    <img src="img/production/catalog/pulsometer.jpg" alt="pulsometr" class="catalog-item__img">
+                    <div class="catalog-item__subtitle">Пульсометр Polar FT1</div>
+                    <div class="catalog-item__descr">Для первых шагов в тренировках, основанных на сердечном ритме</div>
+                    <a href="#" class="catalog-item__link">ПОДРОБНЕЕ</a>
+                    <hr>
+
+                    <div class="catalog-item__footer">
+                        <div class="catalog-item__prices">
+                            <div class="catalog-item__old-price">4 750 руб.</div>
+                            <div class="catalog-item__price">4 500 руб.</div>
+                        </div>
+                        <button class="button button_mini">КУПИТЬ</button>
+                    </div>
+                </div>
+            </div>
+            <div class="catalog__content"></div>
+            <div class="catalog__content"></div>
+        </div>
+    </section>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="js/slick.min.js"></script>
+
+    <!-- ссылки JS с tiny
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script> -->
 
     <!-- ссылки JS с Bootstrap
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
