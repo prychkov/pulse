@@ -43,12 +43,19 @@
             font-size: 14px;
         }
     }
-    .button_main {
-        margin-top: 5px;
-        width: 230px;
-        height: 40px;
-        font-size: 14px;
+    .button {
+        &_main {
+            margin-top: 5px;
+            width: 230px;
+            height: 40px;
+            font-size: 14px;
+        }
+        &_mini {
+            width: 120px;
+            height: 35px;
+        }
     }
+        
     .advantages {
         padding: 40px 0 40px 0;
         &__wrapper {
@@ -111,4 +118,111 @@
         }
     } */
     // для tiny конец
+    .carousel {
+        padding: 40px 0;
+        &__inner {
+            width: 290px;
+        }
+        .slick-slide img {
+            width: 100%;
+        }
+        .slick-dots {
+            list-style-type: none;
+            padding: 0;
+            margin-bottom: 0;
+        }
+        ul {
+            display: flex;
+            justify-content: center;
+            li {
+                margin: 5px;
+                button {
+                    font-size: 0;
+                    padding: 0;
+                    border: 0;
+                    width: 5px;
+                    height: 5px;
+                    border-radius: 50%;
+                    background-color: $main-colors;
+                    vertical-align: middle;                 
+                }
+            }
+        .slick-active > button {
+            background-color: black;
+            }
+        }
+    }
+    .catalog {
+        padding-bottom: 25px;
+        &__tabs {
+            margin-top: 15px;
+            flex-direction: column;
+        }
+        &__tab {
+            margin-bottom: 10px;
+            width: 150px;
+            height: 35px;
+            font-size: 15px;
+            line-height: 35px;
+            /* width: 92px;
+            height: 35px;
+            font-size: 10px;
+            line-height: 35px;
+            margin: 0 2px;
+            cursor: auto; */
+        }
+        &__content {
+            margin-top: 5px;
+            justify-content: center;
+        }
+        &-item {
+            width: 280px;
+            min-height: 425px;
+            &__subtitle {
+                margin-top: 5px;
+            }
+            &__descr {
+                margin-top: 5px;
+            }
+            &__link {
+                margin-top: 5px;
+            }
+            &__list {
+                li {
+                    margin-bottom: 5px;
+                }
+            }
+            hr {
+                margin-top: 15px;
+                margin-bottom: 15px;
+            }
+            &__price {
+                font-size: 18px;
+            }
+        }
+    }
+    .reviews {
+        padding-bottom: 30px;
+        &__wrapper {
+            flex-direction: column;
+            margin-top: 35px;
+            &:nth-of-type(2) {
+                margin-top: 35px;
+            }
+            &:nth-of-type(3) {
+                margin-top: 35px;
+            }
+        }
+        &__img {
+            margin-right: 0;
+            margin-bottom: 20px;
+        }
+        &__descr {
+            width: 270px;
+            text-align: center;
+        }
+        &__text {
+            font-size: 14px;
+        }
+    }
 }
