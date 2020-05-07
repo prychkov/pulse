@@ -71,12 +71,16 @@ $(document).ready(function(){
                   required: "Пожалуйста, введите свою почту",
                   email: "Неправильно введен адрес почты"
                 }
-              }
+            }
         });
     }
+
     valideForms('#consultation-form');
     valideForms('#consultation form');
     valideForms('#order form');
+
+    $('input[name=phone]').mask("+7 (999) 999-9999");
+
   });
 // выше использовался JQery и слик слайрер
 
