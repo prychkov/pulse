@@ -1,7 +1,6 @@
 $(document).ready(function(){
     $('.carousel__inner').slick({
         speed: 1200,
-       // adaptiveHeight: true,
         prevArrow: '<button type="button" class="slick-prev"><img src="icons/arrow_left.svg"></button>',
         nextArrow: '<button type="button" class="slick-next"><img src="icons/arrow_right.svg"></button>',
         responsive: [
@@ -28,12 +27,10 @@ $(document).ready(function(){
                 $('.catalog-item__list').eq(i).toggleClass('catalog-item__list_active');
             });
         });
-    };
+    }
 
     toggleSlide('.catalog-item__link');
     toggleSlide('.catalog-item__back');
-
-    // Modal
 
     $('[data-modal=consultation]').on('click', function () {
         $('.overlay, #consultation').fadeIn('slow');
@@ -97,7 +94,6 @@ $(document).ready(function(){
         return false;
     });
 
-    // Smooth scroll and pageup
     $(window).scroll(function() {
         if ($(this).scrollTop() > 1600) {
             $('.pageup').fadeIn();
@@ -106,30 +102,10 @@ $(document).ready(function(){
         }
     });
 
-    $("a[href=#up]").click(function(){ // href^='#' для всех ссылок начинающихся с решотки
+    $("a[href=#up]").click(function() {
         const _href = $(this).attr("href");
         $("html, body").animate({scrollTop: $(_href).offset().top+"px"});
         return false;
     });
     new WOW().init();
 });
-// выше использовался JQery и слик слайрер
-
-/* ниже использовался tiny слайрер
-
-const slider = tns({
-    container: '.carousel__inner',
-    items: 1,
-    slideBy: 'page',
-    autoplay: false,
-    controls: false,
-    nav: false, 
-});
-
-document.querySelector('.prev').addEventListener('click', function () {
-    slider.goTo('prev');
-});
-
-document.querySelector('.next').addEventListener('click', function () {
-    slider.goTo('next');
-}); */
